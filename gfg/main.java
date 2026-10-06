@@ -39,7 +39,7 @@
 // 2. != (not equal to)
 // 3. < (less than)
 // 4. > (greater than)
-// 5. <= (less than or equal to)
+// 5. <= (less than or equal to)    
 // 6. >= (greater than or equal to)
 
 
@@ -47,6 +47,7 @@
 import java.util.Scanner;
 public class main 
 {
+    
     public static void main(String[] args) 
     {
         System.out.println("""
@@ -64,6 +65,8 @@ public class main
 
         int y;
         y = 20;
+        System.out.println(y);
+        y = y + 3;
         System.out.println(y);
 
         // Arithmetic Operations (+ , - , * , /)
@@ -93,6 +96,8 @@ public class main
         
         System.out.println(5%37);   // 5
         System.out.println(37%5);   // 2
+        System.out.println(5%(-37));   // 5
+        System.out.println((-37)%5);   // -2
 
         double id = 5/2;
         System.out.println(id);
@@ -106,20 +111,25 @@ public class main
 
         // Typecasting - ek data type se dusre datatype me conversion
         char cas = 'A';    //output 65
-        int cast = cas; // implicit typecasting
+        int cast = cas; // implicit typecasting - automatic conversion
         System.out.println(cast);
 
         char casti = 'a';  //output 97
-        int castin = (int)casti;  // explicit typecasting
+        int castin = (int)casti;  // explicit typecasting - manual conversion
         System.out.println(castin);
         System.out.println(casti + casti);
 
         char num = '3';   // output 51
         System.out.println((int)num);
 
-        // integer to character
+        char chi = 'b';
+        System.out.println(chi+0);
+            // integer to character
         int p = 43;   // +    for space 32
         char q = (char)p;
         System.out.println(q);
+
+        boolean xv2 = (5>3);
+        System.out.println(xv2);
     }
 }
