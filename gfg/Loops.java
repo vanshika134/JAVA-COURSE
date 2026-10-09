@@ -42,6 +42,10 @@ public class Loops {
     //    {
     //     if(i%17 == 0) // sout(i+ " ");
     //    }
+        // for(int i = 1 ; i <= 10; i++)
+        // {
+        //     System.out.print(i*17);
+        // }
 
        for(int i = 17; i <= 170; i=i+17)  // 10 iterations hai loop ke and 187 pr break hoga 
        {
@@ -60,6 +64,121 @@ public class Loops {
             System.out.print(i + " ");
         }
         System.out.println();
+        
+        int num = sc.nextInt();
+        // 2,5,8,11,14,17,......
+        for(int i = 2; i <= (3*num - 1); i+=3)  // a + (n-1)d
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        // 4,10,16,22,28
+        int a = 4, d = 6;
+        for(int i = 1; i <= num; i++)
+            {
+                System.out.print(a + " ");
+                a+=d;
+            }
+        System.out.println();
+        
+        // 99,95,91,87,..........
+        int b = 99, c = 4;
+        for(int i = num; i >0 ;i--)
+            {
+                System.out.print(b + " ");
+                b -= c;
+            }
+        System.out.println();
+        
+        // 1,2,4,8,.....  An = a*r^(n-1)
+        int p = 1, r= 2;
+        for(int i = 1; i<= num; i++)
+        {
+            System.out.print(a);
+            p*= r;
+        }
+        System.out.println();
+
+        for(int i = 1; i <= 10; i++)
+        {
+            System.out.print(i +" " +  num + "  ");
+            num--;
+        }
+        System.out.println();
+
+        for(int i = 65; i <= 90; i++)
+        {
+            System.out.print(" " + (char)i + " - " + i);
+        }
+        System.out.println();
+
+        // BREAK(stop) AND CONTINUE(skip)    iterations
+        System.out.println("Enter your numb: ");
+        int numb = sc.nextInt();
+        // for(int i = 2; i <= numb-1; i++)
+        // {
+        //     if(numb%i == 0)
+        //     {
+        //         System.out.print("Composite  ");
+        //     }
+        //     else
+        //         System.out.print("Prime  ");
+        // }
+
+        boolean isPrime = true;
+        for(int i = 2; i <= numb - 1; i++)    // for(int i = 2; i <= Math.sqrt(num); i++)     // for(int i = 2; i * i <= num; i++)
+        {
+            if(numb % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime)
+            System.out.println("Prime");
+        else
+            System.out.println("Composite");
+
+        // int num = sc.nextInt();
+
+        // if(num <= 1)
+        // {
+        //     System.out.println("Neither Prime nor Composite");
+        // }
+        // else
+        // {
+        //     boolean isPrime = true;
+
+        //     for(int i = 2; i * i <= num; i++)
+        //     {
+        //         if(num % i == 0)
+        //         {
+        //             isPrime = false;
+        //             break;
+        //         }
+        //     }
+
+        //     if(isPrime)
+        //         System.out.println("Prime");
+        //     else
+        //         System.out.println("Composite");
+        // }
+
+        // while generally used when conditions are more than one  (INITIALIZE CONDITION PRINT INCREMENT)
+
+        int i = 1;
+        while(i <= 10)
+        {
+            System.out.print(i + " ");
+            i++;
+        }
+
+        int j = 11;
+        do{
+            System.out.print(i + " ");
+            i++;
+        }while(j <= 10);
     }
 }
 
