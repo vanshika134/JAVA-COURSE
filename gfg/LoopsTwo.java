@@ -23,7 +23,7 @@ public class LoopsTwo {
         if(num2 < 0) num2  =  -num2;
         int sum = 0;
         while(num2 != 0)
-            {
+        {
             // num2 = num2%10;
             sum = sum + (num2%10);
             num2 = num2/10;

@@ -91,18 +91,21 @@ public class Loops {
             }
         System.out.println();
         
-        // 1,2,4,8,.....  An = a*r^(n-1)
+        // 1,2,4,8,16,32.....  An = a*r^(n-1)
         int p = 1, r= 2;
         for(int i = 1; i<= num; i++)
         {
-            System.out.print(a);
+            System.out.print(p + "  ");
             p*= r;
         }
         System.out.println();
 
+
         for(int i = 1; i <= 10; i++)
         {
-            System.out.print(i +" " +  num + "  ");
+            // System.out.print(i +" " +  num + "  ");
+            System.out.print(i + " ");
+            System.out.println(num);
             num--;
         }
         System.out.println();
@@ -112,6 +115,8 @@ public class Loops {
             System.out.print(" " + (char)i + " - " + i);
         }
         System.out.println();
+
+
 
         // BREAK(stop) AND CONTINUE(skip)    iterations
         System.out.println("Enter your numb: ");
@@ -135,6 +140,7 @@ public class Loops {
                 break;
             }
         }
+        if( numb == 1)  System.out.println("Neither P nor C");
         if(isPrime)
             System.out.println("Prime");
         else
@@ -165,7 +171,7 @@ public class Loops {
         //         System.out.println("Composite");
         // }
 
-        // while generally used when conditions are more than one  (INITIALIZE CONDITION PRINT INCREMENT)
+        // while : generally used when conditions are more than one  (INITIALIZE CONDITION PRINT INCREMENT)
 
         int i = 1;
         while(i <= 10)
@@ -176,8 +182,8 @@ public class Loops {
 
         int j = 11;
         do{
-            System.out.print(i + " ");
-            i++;
+            System.out.print(j + " ");
+            j++;
         }while(j <= 10);
     }
 }
@@ -210,3 +216,4 @@ public class Loops {
 // Ques: Reverse of a number
 // Ques: Factorial of a number
 // Ques: ‘a’ raise to the power ‘b’
+

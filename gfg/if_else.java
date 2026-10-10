@@ -50,7 +50,7 @@ public class if_else
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter your num1 : ");
+        System.out.print("Enter your num1 : ");
         int num1 = sc.nextInt();
         if (num1 % 2 == 0)    System.out.println("Even");
         else                  System.out.println("Odd");
@@ -72,11 +72,13 @@ public class if_else
         int cp = sc.nextInt();
         System.out.println("Enter your sp : ");
         int sp = sc.nextInt();
-        if(sp > cp)        System.out.println("Profit : " + (sp - cp) + " Profit Percentage : " + ((sp - cp) * 100 / cp) + "%");
+        if(sp > cp)     System.out.println("Profit : " + (sp - cp) + " Profit Percentage : " + ((sp - cp) * 100 / cp) + "%");
         else 
-            if(sp < cp)   System.out.println("Loss : " + (cp - sp) + " Loss Percentage : " + ((cp - sp) * 100 / cp) + "%");
-        else               System.out.println("No Profit No Loss" + " Profit Percentage : 0% Loss Percentage : 0%");
+            if(sp < cp) System.out.println("Loss : " + (cp - sp) + " Loss Percentage : " + ((cp - sp) * 100 / cp) + "%");
+        else            System.out.println("No Profit No Loss" + " Profit Percentage : 0% Loss Percentage : 0%");
         
+        // Ternary Operator (condition ? sach : jhoot;)
+
         System.out.println("Enter your num4 : ");   
         int num4 = sc.nextInt();    // Ternary Operator
         System.out.println((num4 % 5 == 0 && num4 % 3 == 0) ? "VanshikaAayushi" : (num4 % 5 == 0) ? "Vanshika" : (num4 % 3 == 0) ? "Aayushi" : "Neither");
@@ -123,7 +125,11 @@ public class if_else
         if(num6 > num7 && num6 > num8)       System.out.println("Greatest is : " + num6);
         else if(num7 > num6 && num7 > num8)  System.out.println("Greatest is : " + num7);
         else if(num8 > num6 && num8 > num7)  System.out.println("Greatest is : " + num8);
-        else                                 System.out.println("All are equal");
+        else                                 System.out.println("All are equal" + num6);
+
+        int n = sc.nextInt(); 
+        System.out.println((n % 2 == 0) ? "Even" : "Odd");
+
 
     }
 

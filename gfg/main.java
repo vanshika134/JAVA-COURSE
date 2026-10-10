@@ -1,6 +1,6 @@
 // Area/Formula on Google
 // Basic Program in Java
-// How to move in next line
+// How to move in next line  println (or) "\n"
 // Printing Text and Numbers
 // Variables (int)
 // Modifying values of Variables
@@ -14,7 +14,8 @@
 // 3. Blanks, Commas not allowed
 // 4. Keywords not allowed
 // //Comments /*Comments*/  control command slash
-// Input in Java // square of a number
+// Input in Java 
+// square of a number
 // Example: Take 2,3 numbers input and print their sum
 // Example: Calculate Simple Interest
 // Modulus Operator  (usually works on integers)
@@ -22,9 +23,9 @@
 //     1) a%b = a (if a < b)
 //     2) a % (-b) = a % b
 //     3) (-a) % b = - (a% b)
-// int/int int/double
-// double/int double/double
-// character CHAR char ch = 'A';
+// int/int         int/double
+// double/int      double/double
+// character CHAR data type    ====    char ch = 'A';
 // ASCII VALUES a-b(97-122)  A-B(65-90)  0-9(48-57)  
 // Typecasting
 // BODMAS /,*,%  >  +, -  (Priority)
