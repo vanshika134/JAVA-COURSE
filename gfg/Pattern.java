@@ -186,5 +186,8 @@ public class Pattern {
             System.out.println();
         }
         System.out.println();
+
+
+        // Number Triangle Horizontally Flipped
     }
 }
