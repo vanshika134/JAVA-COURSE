@@ -8,6 +8,7 @@ public class Pattern {
         int column = sc.nextInt();
 
 
+        // Star rectangle or square
         for(int i = 0; i < row; i++)
         {
             for(int j = 0; j < column; j++)
@@ -19,6 +20,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Number Square  (1 2 3 4     1 2 3 4     1 2 3 4     ...)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column ; j++)
@@ -30,6 +32,7 @@ public class Pattern {
         System.out.println();
         
 
+        // Alphabet Square
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column; j++)
@@ -41,6 +44,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Alphabet Square 2
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j<= column; j++)
@@ -52,6 +56,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Number Square 2
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column; j++)
@@ -63,6 +68,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Alphabet Square 3
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j<= column; j++)
@@ -74,17 +80,24 @@ public class Pattern {
         System.out.println();
 
 
-        for(int i = 1; i <= row; i++)
+        // Alphabet Square 4
+        for(int i = 0; i < row; i++)
         {
-            for(int j = 1; j <= column ; j++)
+            char ch = (char)('a'+i);
+            if(i%2 == 1)
+                {
+                    ch= Character.toUpperCase(ch);
+                } 
+            for(int j = 0; j < column ; j++)
             {
-                System.out.print((char)(i+96)+ " ");
+                System.out.print(ch);
             }
             System.out.println();
         }
         System.out.println();
 
 
+        // Star triangle
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)
@@ -96,6 +109,7 @@ public class Pattern {
         System.out.println();
         
         
+        // Number Triangle
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)
@@ -107,6 +121,7 @@ public class Pattern {
         System.out.println();
         
         
+        // Alphabet Triangle
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)
@@ -117,6 +132,7 @@ public class Pattern {
         }
         System.out.println();
         
+
         //Alphanumeric triangle
         for(int i = 1; i <= row; i++)
         {
@@ -139,7 +155,7 @@ public class Pattern {
         // STAR TRIANGLE HORIZONTALLY FLIPPED
         for(int i = 1; i <= row; i++)
         {
-            for(int j = i; j <= column; j++)
+            for(int j = i; j <= column; j++)  // int j = 1; j < n+1-i; j++
             {
                 System.out.print("* ");
             }
@@ -148,6 +164,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Alphabet TRIANGLE HORIZONTALLY FLIPPED
         for(int i = 1; i <= row; i++)
         {
             for(int j = i; j <= column; j++)
@@ -159,6 +176,7 @@ public class Pattern {
         System.out.println();
 
 
+        // Alphabet TRIANGLE HORIZONTALLY FLIPPED 2
         for(int i = 1; i <= row; i++)
         {
             for(int j = i; j <= column; j++)
