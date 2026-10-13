@@ -113,7 +113,7 @@ public class Array
         System.out.println(arr5[2]);
 
 
-        int[] arr = {3,35,6,7,4,2};
+        // int[] arr = {3,35,6,7,4,2};
         
 
 
@@ -121,5 +121,10 @@ public class Array
 
     public static void change(int[] p){   // reference variable
             p[2] = 99;
+    }
+
+    public static void Vanshika(int[] j)
+    {
+        System.out.println("Vanshika");
     }
 }
