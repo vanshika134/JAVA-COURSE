@@ -81,8 +81,8 @@ public class main
         Scanner sc = new Scanner(System.in);  // input lene ke liye Scanner class ka object bnaya
         System.out.println("Enter radius : ");
         double r = sc.nextDouble();
-        double sphere = (4/3) * 3.14 * r*r*r;
-        System.out.println("Area is : " + sphere);
+        double volume = (4.0 / 3.0) * Math.PI * r * r * r;
+        System.out.println("Volume is: " + volume);
         
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Enter num 1 : ");
