@@ -1,3 +1,5 @@
+// -----  BASICS  OF  JAVA  -----
+// 1. Output   2. Variables & Data Types   3. Operators   4. Input
 // Area/Formula on Google
 // Basic Program in Java
 // How to move in next line  println (or) "\n"
@@ -8,7 +10,8 @@
 // Arithmetic Operations on double 
 // Example: Calculate area of Circle
 // Homework: Calculate Volume of Sphere
-// Variable Naming Rules
+// Calculate TSA of a cuboid l,b,h
+// Variable Naming Rules------
 // 1. Variables can start from alphabet or _ or $
 // 2. Special characters except _ and $ are not allowed
 // 3. Blanks, Commas not allowed
@@ -16,7 +19,7 @@
 // //Comments /*Comments*/  control command slash
 // Input in Java 
 // square of a number
-// Example: Take 2,3 numbers input and print their sum
+// Example: Take 3 numbers input and print their sum
 // Example: Calculate Simple Interest
 // Modulus Operator  (usually works on integers)
 //     Properties of Modulus Operator
@@ -49,14 +52,14 @@ import java.util.Scanner;
 public class main 
 {
     
-    public static void main(String[] args) 
+    public static void main( String[] args )    // psvm
     {
-        System.out.println("""
+        System.out.println( """
                            Hi 
-                           Vanshika """);
+                           Vanshika """ );      // sout
 
         System.out.print( 1 + 8 );
-        System.out.println( " 1 + 8" );
+        System.out.println( " 1 + 8 " );
 
         // Variables  (to store the particular data in different structures)
 
@@ -66,71 +69,71 @@ public class main
 
         int y;
         y = 20;
-        System.out.println(y);
+        System.out.println( y );
         y = y + 3;
-        System.out.println(y);
+        System.out.println( y );
 
         // Arithmetic Operations (+ , - , * , /)
         // Data types (int , float , double , char , )
 
         double c = 7;
         double area = 3.141592 * c * c;
-        System.out.println(area);
+        System.out.println( "Area of Circle : " + area );
 
 
-        Scanner sc = new Scanner(System.in);  // input lene ke liye Scanner class ka object bnaya
-        System.out.println("Enter radius : ");
+        Scanner sc = new Scanner( System.in );  // input lene ke liye Scanner class ka object bnaya
+        System.out.println(" Enter radius : ");
         double r = sc.nextDouble();
-        double volume = (4.0 / 3.0) * Math.PI * r * r * r;
-        System.out.println("Volume is: " + volume);
+        double volume = ( 4.0 / 3.0 ) * Math.PI * r * r * r;
+        System.out.println(" Volume is: " + volume );
         
-        Scanner sc2 = new Scanner(System.in);
-        System.out.println("Enter num 1 : ");
+        Scanner sc2 = new Scanner( System.in );
+        System.out.println(" Enter num 1 : ");
         int x1 = sc2.nextInt();
-        System.out.println("Enter num 2 : ");
+        System.out.println(" Enter num 2 : ");
         int x2 = sc2.nextInt();
-        System.out.println("Enter num 3 : ");
+        System.out.println(" Enter num 3 : ");
         int x3 = sc2.nextInt();
-        System.out.println("Sum is : " + (x1 + x2 + x3));
+        System.out.println(" Sum is : " + ( x1 + x2 + x3 ) );
         
         // Variables can start from alphabet or _ or $
         
-        System.out.println(5%37);   // 5
-        System.out.println(37%5);   // 2
-        System.out.println(5%(-37));   // 5
-        System.out.println((-37)%5);   // -2
+        System.out.println( 5 % 37 );        // 5
+        System.out.println( 37 % 5 );        // 2
+        System.out.println( 5 % ( -37 ) );   // 5
+        System.out.println( ( -37 ) % 5 );   // -2
 
-        double id = 5/2;
-        System.out.println(id);
-        id = 5.0/2;   // 5.0/2.0    5/2.0
-        System.out.println(id);
+        double id = 5 / 2;
+        System.out.println( id );
+        id = 5.0 / 2;   // 5.0/2.0    5/2.0
+        System.out.println( id );
 
         char ch = 'A';
-        System.out.println(ch);
+        System.out.println( ch );
         char eva = '+';
-        System.out.println(eva);
+        System.out.println( eva );
 
         // Typecasting - ek data type se dusre datatype me conversion
         char cas = 'A';    //output 65
         int cast = cas; // implicit typecasting - automatic conversion
-        System.out.println(cast);
+        System.out.println( cast );
 
         char casti = 'a';  //output 97
-        int castin = (int)casti;  // explicit typecasting - manual conversion
-        System.out.println(castin);
-        System.out.println(casti + casti);
+        int castin = ( int ) casti;  // explicit typecasting - manual conversion
+        System.out.println( castin );
+        System.out.println( casti + casti );
 
         char num = '3';   // output 51
-        System.out.println((int)num);
+        System.out.println( ( int ) num );
 
         char chi = 'b';
-        System.out.println(chi+0);
+        System.out.println( chi + 0 );
             // integer to character
         int p = 43;   // +    for space 32
-        char q = (char)p;
-        System.out.println(q);
+        char q = ( char ) p;
+        System.out.println( q );
 
-        boolean xv2 = (5>3);
-        System.out.println(xv2);
+        boolean xv2 = ( 5 > 3 );
+        System.out.println( xv2 );
     }
 }
