@@ -1,6 +1,8 @@
 import java.util.Scanner;
-public class Pattern {
-    public static void main(String[] args) {
+public class Pattern 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter rows : ");
         int row = sc.nextInt();
@@ -32,7 +34,7 @@ public class Pattern {
         System.out.println();
         
 
-        // Alphabet Square
+        // Alphabet Square (A B C D     A B C D    A B C D    ...)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column; j++)
@@ -44,7 +46,7 @@ public class Pattern {
         System.out.println();
 
 
-        // Alphabet Square 2
+        // Alphabet Square 2  (a b c d    a b c d   .....)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j<= column; j++)
@@ -56,7 +58,7 @@ public class Pattern {
         System.out.println();
 
 
-        // Number Square 2
+        // Number Square 2 (1 1 1 1    2 2 2 2    3 3 3 3 .....)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column; j++)
@@ -68,7 +70,7 @@ public class Pattern {
         System.out.println();
 
 
-        // Alphabet Square 3
+        // Alphabet Square 3 ( A A A A     B B B B     C C C C  ...)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j<= column; j++)
@@ -80,7 +82,7 @@ public class Pattern {
         System.out.println();
 
 
-        // Alphabet Square 4
+        // Alphabet Square 4 ( a a a a    B B B B    c c c c  D D D D)
         for(int i = 0; i < row; i++)
         {
             char ch = (char)('a'+i);
@@ -97,7 +99,7 @@ public class Pattern {
         System.out.println();
 
 
-        // Star triangle
+        // Star triangle (*   * *   * * *    * * * *   .....)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)
@@ -109,7 +111,7 @@ public class Pattern {
         System.out.println();
         
         
-        // Number Triangle
+        // Number Triangle (1    1 2   1 2 3    1 2 3 4   ....)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)
@@ -121,7 +123,7 @@ public class Pattern {
         System.out.println();
         
         
-        // Alphabet Triangle
+        // Alphabet Triangle (A    B B    C C C    D D D D ....)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1 ; j <= i; j++)

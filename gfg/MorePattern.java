@@ -29,7 +29,7 @@ public class MorePattern
         System.out.println();
         
         
-        // STAR PLUS(Odd)
+        // STAR PLUS('n' is Odd)
         for(int i = 1; i <= row; i++)
         {
             for(int j = 1; j <= column; j++)
@@ -115,7 +115,7 @@ public class MorePattern
 
 
         // STAR TRAINGLE VERTICALLY FLIPPED                    
-        for(int i = 1; i <= row; i++)
+        for(int i = 1; i <= row; i++)     // considering a square
         {
             for(int j = 1; j <= column; j++)
             {
@@ -135,7 +135,7 @@ public class MorePattern
         // STAR TRAINGLE VERTICALLY FLIPPED
         for (int i = 1; i <= row; i++) 
         {
-            for(int j = 1; j <= column -i; j++)
+            for(int j = 1; j <= column -i; j++)  // kyuki ek km star chahiye
             {
                 System.out.print("  ");
             }   
@@ -207,11 +207,31 @@ public class MorePattern
             System.out.println();
         }
         System.out.println();
+        // nsp = n - 1
+        // nst = 1
+        // after a new line nst += 2, nsp -= 1
+        int nwnsp = row - 1, nwnst = 1; 
+        for(int i = 1; i <= row; i++)
+        {
+            for (int j = 1; j <= nwnsp; j++) 
+            {
+                System.out.print("  ");    
+            }
+            for (int j = 1; j <= nwnst ; j++) 
+            {
+                System.out.print("*" + " ");    
+            }
+            nwnsp--;
+            nwnst += 2;
+            System.out.println();
+        }
+        System.out.println();
+
 
 
         // Diamond
         int n = sc.nextInt();
-        int nsp = n-1, nst = 1;
+        int nsp = n-1, nst = 1;  // number of spaces and stars
         for(int i = 1; i <= n; i++)
         {
             for (int j = 1; j <= nsp; j++) 
