@@ -1,8 +1,10 @@
 
 import java.util.Scanner;
 
-public class LoopsTwo {
-    public static void main(String[] args) {
+public class LoopsTwo 
+{
+    public static void main(String[] args) 
+    {
         // count digits of a number
         Scanner sc = new Scanner(System.in);
         
@@ -29,6 +31,7 @@ public class LoopsTwo {
             num2 = num2/10;
         }
         System.out.println(sum);
+        // sout((sum > 0) ? sum : -sum);
         
         
         // Limits of int
@@ -67,14 +70,15 @@ public class LoopsTwo {
 
         // 'a'(num5) raise to the power 'b'(num6)
         System.out.print("Enter number: ");
-        int num5 = sc.nextInt();
-        int num6 = sc.nextInt();
+        int num5 = sc.nextInt(); // a
+        int num6 = sc.nextInt(); // b
         int pow = 1;
         for(int k = 1; k <= num6; k++)
         {
-            pow *= num5;
+            pow *= num5;    // pow = pow * a (till b times)
         }
         System.out.println(num5 + " Raise to power " + num6 + " is " + pow);
 
     }
 }
+

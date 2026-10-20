@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Loops {
-    public static void main(String[] args) {
+public class Loops 
+{
+    public static void main(String[] args) 
+    {
 
         Scanner sc = new Scanner(System.in);
         
@@ -178,7 +180,8 @@ public class Loops {
         }
 
         int j = 11;
-        do{
+        do
+        {
             System.out.print(j + " ");
             j++;
         }while(j <= 10);
@@ -213,4 +216,4 @@ public class Loops {
 // Ques: Reverse of a number
 // Ques: Factorial of a number
 // Ques: ‘a’ raise to the power ‘b’
-
+// INFINITE LOOPS...........
