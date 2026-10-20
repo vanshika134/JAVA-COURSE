@@ -1,3 +1,5 @@
+// Relational Operators and boolean data types
+//        a>b  a<b  a>=b  a<=b  a!=b  a==b
 // If-Else Statements
 // Ques: Take positive integer input and tell if it is odd or even
 // HW: Take positive integer input and tell if it is divisible by 5 or not.
