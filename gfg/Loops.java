@@ -67,7 +67,7 @@ public class Loops {
         
         int num = sc.nextInt();
         // 2,5,8,11,14,17,......
-        for(int i = 2; i <= (3*num - 1); i+=3)  // a + (n-1)d
+        for(int i = 2; i <= (3*num-1); i+=3)  // a + (n-1)d(2+(n-1)3)
         {
             System.out.print(i + " ");
         }
@@ -131,7 +131,7 @@ public class Loops {
         //         System.out.print("Prime  ");
         // }
 
-        boolean isPrime = true;
+        boolean isPrime = true;   // boolean flag = true;
         for(int i = 2; i <= numb - 1; i++)    // for(int i = 2; i <= Math.sqrt(num); i++)     // for(int i = 2; i * i <= num; i++)
         {
             if(numb % i == 0)
@@ -147,7 +147,6 @@ public class Loops {
             System.out.println("Composite");
 
         // int num = sc.nextInt();
-
         // if(num <= 1)
         // {
         //     System.out.println("Neither Prime nor Composite");
@@ -155,7 +154,6 @@ public class Loops {
         // else
         // {
         //     boolean isPrime = true;
-
         //     for(int i = 2; i * i <= num; i++)
         //     {
         //         if(num % i == 0)
@@ -164,7 +162,6 @@ public class Loops {
         //             break;
         //         }
         //     }
-
         //     if(isPrime)
         //         System.out.println("Prime");
         //     else
