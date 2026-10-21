@@ -1,7 +1,4 @@
-
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
 
 public class Methods 
 {
@@ -12,17 +9,18 @@ public class Methods
     public static void main(String[] args)  // Main Function
     {
         Scanner sc = new Scanner(System.in);
-        // System.out.println(Math.sqrt(4));  // built in function
-        // System.out.println(Math.cbrt(125));  // built in function
-        // System.out.println(Math.PI);    // it is not method a variable
-        // System.out.println(Math.abs(-45));
-        // System.out.println(Math.floor(6.8)); // 6   // (-7.8) --> -8
-        // System.out.println(Math.ceil(3.0002));
-        // System.out.println(Math.min(3.45,9));
-        // System.out.println(Math.max(3.45,9));
-        // System.out.println(Math.max(Math.max(2,3),5)); // Max of three
-        // System.out.println(Math.max(Math.max(2,3),Math.max(7,5))); // Max of Four
-        // System.out.println(Math.pow(2,4));
+
+        System.out.println(Math.sqrt(4));  // built in function/methods
+        System.out.println(Math.cbrt(125));  // built in function
+        System.out.println(Math.PI);    // it is not method , Math class hai and PI - a variable
+        System.out.println(Math.abs(-45));
+        System.out.println(Math.floor(6.8)); // 6   // [-7.8] --> -8
+        System.out.println(Math.ceil(3.0002));
+        System.out.println(Math.min(3.45,9));
+        System.out.println(Math.max(3.45,9));
+        System.out.println(Math.max(Math.max(2,3),5)); // Max of three
+        System.out.println(Math.max(Math.max(2,3),Math.max(7,5))); // Max of Four
+        System.out.println(Math.pow(2,4));
 
         // SYNTAX
         Vanshika();
@@ -32,6 +30,8 @@ public class Methods
         max(4,2,5);
         // Vanshu();  // stand alone call
         System.out.println(Vanshu());  //sout(3+Vanshu()); it will add
+        int x0 = Vanshu();
+        System.out.println(3+x0);
 
         int x = rana(7);   // ----> 5
         System.out.println(3+x);  // 8
@@ -44,7 +44,6 @@ public class Methods
         int ncr = pandc(n)/(pandc(r)*pandc(n-r));
         int npr = pandc(n)/pandc(n-r);
         System.out.println(ncr + " " + npr);
-
 
         int z = 6;
         System.out.println(z);
@@ -71,6 +70,7 @@ public class Methods
     public static void sum(int a , int b , int c)  // PARAMETERS
     {
         System.out.println(a+b);
+        // System.out.println(a+b+C);
     }
 
 
