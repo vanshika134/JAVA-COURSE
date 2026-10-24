@@ -85,7 +85,22 @@ public class Array
         }
         System.out.println("Sum of elements is: "+ sum); 
 
+
         //PRINT PRODUCT OF ELEMENTS OF ARRAY [int product = 1;]   ( product  *=  arr[ i ] )
+        System.out.println("Enter size to product : ");
+        int num = sc.nextInt();
+        int[] array = new int[num];
+        int product = 1;
+        for(int i = 0 ; i < num ; i++)
+            {
+                System.out.print("Enter your elements : " );
+                array[i] = sc.nextInt();
+            } 
+        for(int i = 0; i < n; i++)
+        {
+            product *= array[i];
+        }
+        System.out.println("Product is : " + product);
 
 
         // PRINT MAXIMUM ELEMENT OF THE ARRAY
@@ -103,7 +118,7 @@ public class Array
         // PRINT MINIMUM ELEMENT IN ARRAY
 
 
-        // Array Index Out of Bound.........
+        // Array Index Out of Bound Exception.........
 
 
         // Array of other data types
@@ -127,14 +142,14 @@ public class Array
 
         // shallow copy and deep copy
         int[] arr5 = {10,20,30,40};
-        int[] arr6 = arr5;  // arr6 is shallow copy of arr5  array ka sirf naam bdla hai lekin hai vhi 
+        int[] arr6 = arr5;  // arr6 is shallow copy of arr5 , array ka sirf naam bdla hai lekin hai vhi (dusre variable ke naam se original me change krr skte hain)
         arr6[3] = 100;
         System.out.println("Shallow " + arr5[3]);
 
         int a = 4;  // 4 bytes leta hai ye
-        // int[] arr = {10,20,30,40}; // 16 bytes
-        int[] deep = Arrays.copyOf(arr5,arr5.length); // deep copy
-        deep[2] = 100;     // new array bna ke usme change real change nhi hui
+        // int[] arr = {10,20,30,40}; // 16 bytes continuous/contiguous memory allocation
+        int[] deep = Arrays.copyOf(arr5,arr5.length); // deep copy  (CAMEL CASE)
+        deep[2] = 100;     // new array bna ke usme change hua , real change nhi hui
         System.out.println(deep[2]);
         System.out.println(arr5[2]);
     }
