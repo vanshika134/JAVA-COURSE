@@ -103,7 +103,7 @@ public class Array
         System.out.println("Product is : " + product);
 
 
-        // PRINT MAXIMUM ELEMENT OF THE ARRAY
+        // PRINT MAXIMUM ELEMENT OF THE ARRAY (Largest element in Array - GFG)
         int[] arr4 = {3,5,6,3,-3,2,5,78,45,67,9,3};
         int max = arr4[0];        // int max = Integer.MIN_VALUE;
         for(int i = 0; i < arr4.length; i++)
@@ -152,6 +152,14 @@ public class Array
         deep[2] = 100;     // new array bna ke usme change hua , real change nhi hui
         System.out.println(deep[2]);
         System.out.println(arr5[2]);
+
+
+        // Another method for deep copy.......
+        // int[] arr = (10,20,30,40);
+        // int[] brr = new int[arr.length];
+        // for (int i = 0; i < arr.length; i++) {
+        //     brr[i] = arr[i];
+        // }
     }
     public static void change(int[] p) {    // reference variable
         p[2] = 99;             // p ko same values aa gyi
