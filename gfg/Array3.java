@@ -11,10 +11,12 @@ public class Array3 {
         for(int ele : arr)  //  array ke element ki ek copy bnti hai we cannot change elements that's why only used to traverse
         {
             System.out.print(ele + " ");
+            // ele *= 2; // impossible......
         }
+        
 
 
-        // ROTATE ARRAY
+        // ROTATE ARRAY  (imppppppppppppppppp)
         int[] arr2 = {4,5,7,2,6,8,4};
         System.out.print("Enter rotation steps (d): ");
         int d = sc.nextInt();

@@ -92,9 +92,9 @@ public class Array2 {
         int i = 0 , p = arr6.length - 1;
         while( i < p )
         {
-            int temp = arr6[i];
-            arr6[i] = arr6[p];
-            arr6[p] = temp;
+            int temp = arr6 [i];
+            arr6 [i] = arr6 [p];
+            arr6 [p] = temp;
             i++;
             p--;
         }
