@@ -29,10 +29,11 @@ public class Array2 {
         System.out.println("Modified array: " + Arrays.toString(arr2));
 
 
-        // SEARCH IN ARRAY
+        // SEARCH IN ARRAY   Linear search
         // int x to search , array
         int[] arr3 = {1,2,3,4,5};
         int target = 3;
+        // int found = -1;    other way withour boolean
         boolean flag = false;  // element target me nhi hain
         for (int i = 0; i < arr3.length; i++) {
             if(arr3[i] == target)
@@ -42,13 +43,13 @@ public class Array2 {
                 break;
             }
         }
-        /// if(flag == true)    System.out.println("Target exist"); // if(flag)
-        if(!flag)       System.out.println("Not exist"); // (flag == false)
+        // if(flag==true)   System.out.print("Target exist"); if(flag)
+        if(!flag)     System.out.println("Not exist"); //(flag==false)
         
 
-        // TWO SUM
-        int[] arr4 = {1,2,3,4,3,2,1,2,3,4};
-        int target2 = 4;
+        // TWO SUM    --  {GFG PRACTICE......}
+        int[] arr4 = {0,1,2,3,4,5,6,7,8,9};
+        int target2 = 5;
         for(int i = 0; i < arr4.length ; i++)
         {
             for(int j = i+1; j < arr4.length; j++)
@@ -59,6 +60,7 @@ public class Array2 {
                 }
             }
         }
+        // returnh false
 
 
         System.out.println();
@@ -87,7 +89,7 @@ public class Array2 {
 
         System.out.println();
 
-        // REVERSE ARRAY (TWO POINTER TECHNIQUE)
+        // REVERSE ARRAY (TWO POINTER/VARIABLE TECHNIQUE)
         int[] arr6 = { 3 , 6 , 4 , 2 , 8 , 9 };
         int i = 0 , p = arr6.length - 1;
         while( i < p )
@@ -115,6 +117,9 @@ public class Array2 {
 
 
     }
+
+
+
     public static void print(int[] arr) {
         for(int i = 0; i < arr.length; i++)
         {

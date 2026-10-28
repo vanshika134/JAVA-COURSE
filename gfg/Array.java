@@ -149,7 +149,7 @@ public class Array
         int a = 4;  // 4 bytes leta hai ye
         // int[] arr = {10,20,30,40}; // 16 bytes continuous/contiguous memory allocation
         int[] deep = Arrays.copyOf(arr5,arr5.length); // deep copy  (CAMEL CASE)
-        deep[2] = 100;     // new array bna ke usme change hua , real change nhi hui
+        deep[2] = 200;     // new array bna ke usme change hua , real change nhi hui
         System.out.println(deep[2]);
         System.out.println(arr5[2]);
 
