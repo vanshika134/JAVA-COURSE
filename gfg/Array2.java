@@ -146,3 +146,35 @@ public class Array2 {
     // }
 
 }
+
+
+// What is Data Structure
+// What is Array
+// Initialisation & Indexing
+// Output & Input of Array using Loop
+// Given an Array, print negative elements only
+// Default values
+// Print sum of elements of the array.
+// Print product of elements of the array.
+// Print the Maximum element in the array [largest element in Array]
+// Print the minimum element in the array
+// Array index out of bound
+// Array of other data types
+// Passing array to Methods
+// Multiply odd indexed elements by 2 and add 10 to even indexed elements
+// Print product of elements of the array.
+// Print the minimum element in the array
+// Multiply odd indexed elements by 2 and add 10 to even indexed elements
+// Search in Array
+// Two sum
+// Print second maximum element in array
+// For each loop
+// Reverse array (Different approach)
+// Rotate Array
+// Missing in Array
+// Segregate 0s and 1s
+// Wave Array
+// ArrayList & Vector in Java
+// Adding one
+// Merge 2 sorted Array
+// Sort 0s,1s, and 2s
