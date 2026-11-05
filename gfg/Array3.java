@@ -15,7 +15,7 @@ public class Array3 {
             System.out.print(ele + " ");
             // ele *= 2; // impossible......
         }
-        
+         
 
 
         // ROTATE ARRAY  (imppppppppppppppppp) - (GFG Practice)

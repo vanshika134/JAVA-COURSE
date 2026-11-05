@@ -12,15 +12,19 @@ public class Strings {
         // Sting Data Type
         String str = "Vanshika is a girl";
         System.out.println(str);
+
         String s1 = sc.next();    // agr hmne string me space diya to bs starting ki string print hogi
         System.out.println(s1);  
-        String s2 = sc.nextLine();
+        
+        String s2 = sc.nextLine(); // ye puri line print krega
         System.out.println(s2);
 
         // charAT()  and length()
-        System.out.println(s1.charAt(4));
+        System.out.println(s1.charAt(4));  // to print index in string
         System.out.println(s1.length());
 
+
+        // Count the number of vowels present in a string
         String s3 = sc.nextLine();
         int count = 0;
         for(int i = 0 ; i < s3.length() ; i++)
@@ -30,10 +34,12 @@ public class Strings {
             {
                 count++;
             }
-            System.out.println(count);
         }
+        System.out.println(count);
 
-        // PALINDROME STRING
+        // PALINDROME STRING  --  (GFG Practice)
+
+        // Passing Strings to method
         
 
     }
