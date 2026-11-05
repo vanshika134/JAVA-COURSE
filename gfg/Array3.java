@@ -7,7 +7,7 @@ public class Array3 {
     {
         Scanner sc = new Scanner(System.in);
 
-        // FOR EACH LOOP...........
+        // FOR EACH LOOP...........   use to traverse data structures
         int[] arr = {5,8,5,3,2};
         // int element in for int element in the array
         for(int ele : arr)  //  array ke element ki ek copy bnti hai we cannot change elements that's why only used to traverse
@@ -40,19 +40,21 @@ public class Array3 {
 
         // ARRAYLIST  &  VECTOR IN JAVA
         ArrayList<Integer> arr3 =  new ArrayList<>();
-        arr3.add(25);
+        arr3.add(25);    // new element add krne ke liye
         arr3.add(45);
         arr3.add(29);
         arr3.add(55);
         arr3.add(77);
-        System.out.println(arr3.get(2));
-        arr3.set(3,57);
+        System.out.println(arr3.get(2));  // to print particular index element
+        arr3.set(3,57);     // to update particular index element
         System.out.println(arr3);  // all arraylist will be print  (int backend it takes loop and print)
-        int nk = arr3.size();
+        int nk = arr3.size();     // iska size hai with brackets
+        System.out.println(nk);
         for(int i  = 0; i < nk ; i++)
         {
             System.out.print(arr3.get(i) + " ");
         }
+        System.out.println();
         for(int elem : arr3)
         {
             System.out.print(elem + " ");

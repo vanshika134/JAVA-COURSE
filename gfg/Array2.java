@@ -60,8 +60,7 @@ public class Array2 {
                 }
             }
         }
-        // returnh false
-
+        
 
         System.out.println();
 

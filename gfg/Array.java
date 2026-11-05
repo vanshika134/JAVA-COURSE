@@ -116,6 +116,15 @@ public class Array
         System.out.println("MAXIMUM NUMBER IS : " +max);
 
         // PRINT MINIMUM ELEMENT IN ARRAY
+        int min = arr4[0];        // int min = Integer.MAX_VALUE;
+        for(int i = 0; i < arr4.length; i++)
+        {
+            if(arr4[i] < min)
+            {
+                min = arr4[i];
+            }
+        }
+        System.out.println("MINIMUM NUMBER IS : " +min);
 
 
         // Array Index Out of Bound Exception.........
