@@ -47,7 +47,7 @@ public class Array3 {
         arr3.add(77);
         System.out.println(arr3.get(2));  // to print particular index element
         arr3.set(3,57);     // to update particular index element
-        System.out.println(arr3);  // all arraylist will be print  (int backend it takes loop and print)
+        System.out.println(arr3);  // all arraylist will be print  (in backend it takes loop and print)
         int nk = arr3.size();     // iska size hai with brackets
         System.out.println(nk);
         for(int i  = 0; i < nk ; i++)
@@ -59,10 +59,14 @@ public class Array3 {
         {
             System.out.print(elem + " ");
         }
+
         System.out.println();
         arr3.add(78);
+
         arr3.add(1,100); // 1 index pr 100 add krdo
+
         System.out.println(arr3);
+
         arr3.remove(arr3.size() - 1 ); // index
         System.out.println(arr3);
 
@@ -92,13 +96,14 @@ public class Array3 {
         int[] array = {2,5,6,9};
         int[] array_2 = {2,9,3,5,3,5,7,0};
         int[] mrg = new int[array.length + array_2.length];
-        for(int ele : mrg)  System.out.print(ele + " ");
+        for(int ele : mrg)  System.out.print(ele + " "); // merge se pehle print
         System.out.println();
         merge(mrg,array,array_2);
-        for(int ele : mrg)  System.out.print(ele + " ");
+        for(int ele : mrg)  System.out.print(ele + " "); // merge ke bad print
         System.out.println();
         
-
+        // Merge 3 Sorted Arrays in a single big array - in reverse order 
+        // sort 0s, 1s, and 2s in an array - GFG Practice
 
     }
 
