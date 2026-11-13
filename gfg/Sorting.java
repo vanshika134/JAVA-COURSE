@@ -1,11 +1,13 @@
-public class Sorting {
+public class Sorting 
+{
     // CHECK SORTED ARRAY  --  GFG PRACTICE
     public static void print(int[] arr)
     {
         for(int ele : arr)  System.out.print(ele + " ");
         System.out.println();
     }
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // BUBBLE SORT  --  Swap Adjacent Elements
         int[] arr = {5,-2,4,7,9,4,2,1,0};
         int n = arr.length;
