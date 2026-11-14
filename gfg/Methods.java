@@ -51,7 +51,7 @@ public class Methods
         System.out.println(z); 
 
         System.out.print(n + " " + r);
-        // System.out.println(swap(n,r));  not possible
+        // System.out.println(swap(n,r));     not possible
 
     }
     public static void Aayushi()
@@ -67,7 +67,7 @@ public class Methods
         System.out.println(Math.max(Math.max(a,b),c));
     }
     
-    public static void sum(int a , int b , int c)  // PARAMETERS
+    public static void sum(int a , int b , int c)   // /PARAMETERS
     {
         System.out.println(a+b);
         // System.out.println(a+b+C);
